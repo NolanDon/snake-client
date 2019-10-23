@@ -2,8 +2,9 @@ const { connect } = require('./client');
 const { setupInput } = require('./input');
 
 console.log('Connecting ...');
-connect(); 
+const random = connect(); 
 
+setupInput(random);
 
 module.exports = setupInput;
 
